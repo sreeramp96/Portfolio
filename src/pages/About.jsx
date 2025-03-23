@@ -1,12 +1,14 @@
-export default function About() {
+import React from "react";
+
+const About = () => {
   return (
-    <section id="about" className="bg-gray-900 text-white py-20 px-10">
+    <section id="about" className="text-white py-20 px-10">
       <h2 className="text-4xl font-bold text-center text-teal-400 mb-10">
         About Me
       </h2>
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-lg text-gray-300 mb-6">
-          Hey! I’m <span className="text-teal-400">[Your Name]</span>, a
+          Hey! I'm <span className="text-teal-400">[Your Name]</span>, a
           passionate full-stack developer with
           <span className="text-teal-400"> 5 years of experience</span> in
           building web applications.
@@ -20,10 +22,12 @@ export default function About() {
           applications.
         </p>
         <p className="text-lg text-gray-300">
-          When I’m not coding, you’ll find me watching movies, playing games, or
+          When I'm not coding, you'll find me watching movies, playing games, or
           learning new tech.
         </p>
       </div>
     </section>
   );
-}
+};
+
+export default About;

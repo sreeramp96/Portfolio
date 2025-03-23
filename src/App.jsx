@@ -1,21 +1,15 @@
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuroraHero } from "./components/AuroraHero"; // AuroraHero for background effect
+import "./App.css"; // Your styles (including Tailwind CSS if applicable)
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white">
-      <Navbar />
-      <Home />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="relative min-h-screen">
+        <AuroraHero />
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -2,31 +2,38 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Task Manager App",
+      title: "Flood Monitoring System",
       description:
-        "A full-stack app to create, read, update, and delete tasks.",
-      tech: ["React", "Django", "PostgreSQL"],
-      link: "#",
+        "Created a real-time flood monitoring and early warning system using computer vision and Python.Designed a system to record and analyze water level changes using OpenCV.Established an efficient information channel for flood-related updates.Enhanced authorities' abilities in search and rescue and implemented an early warning mechanism.",
+      tech: [
+        "Python 3.7+",
+        "OpenCV 4.0+",
+        "numpy",
+        "scipy",
+        "matplotlib",
+        "scikit learn",
+      ],
+      link: "https://github.com/sreeramp96/Flood-Monitoring-System",
     },
     {
       id: 2,
-      title: "E-Commerce Website",
+      title: "Workopia",
       description:
-        "An e-commerce platform with user authentication and payment integration.",
-      tech: ["Laravel", "MySQL", "React"],
-      link: "#",
+        "A job platform with user authentication to post and apply for jobs.Job Listing CRUD. Authentication & Authorization Policies. Profile Avatar Upload. Blade UI Components. Vite & Tailwind Integration. Bookmarking System. Apply & Upload Resume. User Dashboard. Alpine.js For Interactivity. Database Seeder. Job Search. Job Listing Pagination",
+      tech: ["Laravel", "MySQL", "TailwindCSS"],
+      link: "http://140.245.241.137/",
     },
     {
       id: 3,
       title: "Portfolio Website",
       description: "A personal portfolio to showcase my projects and skills.",
       tech: ["React", "TailwindCSS"],
-      link: "#",
+      link: "https://portfolio-six-pi-73.vercel.app/",
     },
   ];
 
   return (
-    <section id="projects" className="bg-gray-900 text-white py-20 px-10">
+    <section id="projects" className=" text-white py-20 px-10">
       <h2 className="text-4xl font-bold text-center text-teal-400 mb-10">
         My Projects
       </h2>
@@ -34,7 +41,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+            className=" p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
           >
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
             <p className="text-gray-400 mb-4">{project.description}</p>
